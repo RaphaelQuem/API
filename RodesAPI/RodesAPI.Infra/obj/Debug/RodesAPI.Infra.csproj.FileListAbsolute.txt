@@ -1,0 +1,6 @@
+C:\Repos\RodesAPI\RodesAPI\RodesAPI.Infra\bin\Debug\RodesAPI.Infra.dll
+C:\Repos\RodesAPI\RodesAPI\RodesAPI.Infra\bin\Debug\RodesAPI.Infra.pdb
+C:\Repos\RodesAPI\RodesAPI\RodesAPI.Infra\bin\Debug\Newtonsoft.Json.dll
+C:\Repos\RodesAPI\RodesAPI\RodesAPI.Infra\obj\Debug\RodesAPI.Infra.csprojResolveAssemblyReference.cache
+C:\Repos\RodesAPI\RodesAPI\RodesAPI.Infra\obj\Debug\RodesAPI.Infra.dll
+C:\Repos\RodesAPI\RodesAPI\RodesAPI.Infra\obj\Debug\RodesAPI.Infra.pdb

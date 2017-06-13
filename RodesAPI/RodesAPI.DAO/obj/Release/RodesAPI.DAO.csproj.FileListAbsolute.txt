@@ -1,0 +1,10 @@
+C:\Repos\RodesAPI\RodesAPI\RodesAPI.DAO\bin\Release\RodesAPI.DAO.dll
+C:\Repos\RodesAPI\RodesAPI\RodesAPI.DAO\bin\Release\RodesAPI.DAO.pdb
+C:\Repos\RodesAPI\RodesAPI\RodesAPI.DAO\bin\Release\RodesAPI.Infra.dll
+C:\Repos\RodesAPI\RodesAPI\RodesAPI.DAO\bin\Release\RodesAPI.ViewModel.dll
+C:\Repos\RodesAPI\RodesAPI\RodesAPI.DAO\bin\Release\Newtonsoft.Json.dll
+C:\Repos\RodesAPI\RodesAPI\RodesAPI.DAO\bin\Release\RodesAPI.Infra.pdb
+C:\Repos\RodesAPI\RodesAPI\RodesAPI.DAO\bin\Release\RodesAPI.ViewModel.pdb
+C:\Repos\RodesAPI\RodesAPI\RodesAPI.DAO\obj\Release\RodesAPI.DAO.csprojResolveAssemblyReference.cache
+C:\Repos\RodesAPI\RodesAPI\RodesAPI.DAO\obj\Release\RodesAPI.DAO.dll
+C:\Repos\RodesAPI\RodesAPI\RodesAPI.DAO\obj\Release\RodesAPI.DAO.pdb

@@ -1,0 +1,5 @@
+C:\Repos\RodesAPI\RodesAPI\RodesAPI.ViewModel\bin\Debug\RodesAPI.ViewModel.dll
+C:\Repos\RodesAPI\RodesAPI\RodesAPI.ViewModel\bin\Debug\RodesAPI.ViewModel.pdb
+C:\Repos\RodesAPI\RodesAPI\RodesAPI.ViewModel\obj\Debug\RodesAPI.ViewModel.csprojResolveAssemblyReference.cache
+C:\Repos\RodesAPI\RodesAPI\RodesAPI.ViewModel\obj\Debug\RodesAPI.ViewModel.dll
+C:\Repos\RodesAPI\RodesAPI\RodesAPI.ViewModel\obj\Debug\RodesAPI.ViewModel.pdb

@@ -37,7 +37,10 @@ namespace RodesAPI.DAO
                     command.CommandText += " 						A.VALORS ValorPeca, ";
                     command.CommandText += " 						C.CODTAMS MedidaPecas,";
                     command.CommandText += " 						'N' Brinde,";
-                    command.CommandText += " 						'Disponível' Situacao";
+                    command.CommandText += " 						CASE CONTAS";
+                    command.CommandText += " 						    WHEN '' THEN 'Vendido'";
+                    command.CommandText += " 						    ELSE 'Disponível'";
+                    command.CommandText += " 						END Situacao";
                     command.CommandText += "  FROM	    			SIGCDPRO AS A WITH (NOLOCK)";
                     command.CommandText += " 						INNER  JOIN ";
                     command.CommandText += " 						SIGCDUNI AS B WITH (NOLOCK) ";

@@ -31,21 +31,16 @@ namespace RodesAPI.Services
         {
             string token = "";
             string tokenizedvalue = "";
-            string tokenizedtime = "";
             foreach(char chr in value)
             {
                 tokenizedvalue += (int)chr;
             }
 
-            string time = DateTime.Now.Minute.ToString() + DateTime.Now.Hour.ToString() + DateTime.Today.Day.ToString() + DateTime.Today.Month.ToString();
-            foreach (char chr in time)
-            {
-                tokenizedtime += (int)chr;
-            }
+            string time = DateTime.Now.Second.ToString() + DateTime.Now.DayOfYear.ToString() + DateTime.Today.Year.ToString().Substring(3) ;
 
-            for(int i=0; i< (tokenizedvalue.Length>tokenizedtime.Length? tokenizedtime.Length: tokenizedvalue.Length);i++)
+            for(int i=0; i< (tokenizedvalue.Length>time.Length? time.Length: tokenizedvalue.Length);i++)
             {
-                token += tokenizedtime[i] + tokenizedvalue[i] ;
+                token += time[i] + (tokenizedvalue[i] * time[i]);
             }
             token = token.Substring(0, 20);
 

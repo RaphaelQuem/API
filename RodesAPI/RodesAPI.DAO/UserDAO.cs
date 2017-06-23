@@ -32,7 +32,7 @@ namespace RodesAPI.DAO
                     pPass.DbType = DbType.String;
 
 
-                    command.CommandText += " SELECT		USUARIOS";
+                    command.CommandText += " SELECT		USUARIOS, NCOMPS";
                     command.CommandText += " FROM       SIGCDUSU";
                     command.CommandText += " WHERE      USUARIOS     = @P_USER";
                     command.CommandText += " AND        SENHAS       = @P_PASS";
@@ -46,8 +46,9 @@ namespace RodesAPI.DAO
                         if (rdr.Read())
                         {
                             string usu = rdr["USUARIOS"].ToString().Trim();
+                            string name = rdr["NCOMPS"].ToString().Trim();
 
-                            return new UserVM() { UserName = usu };
+                            return new UserVM() { UserName = usu, FirstName = name.Substring(0,name.IndexOf(" "))};
                         }
                     }
 

@@ -59,12 +59,11 @@ namespace RodesAPI.DAO
                     command.CommandText += "  AND       B.ETIQS     = 'S'";
                     command.CommandText += "  AND       C.CBARS     = @P_ID";
 
-
                     command.Parameters.Add(pId);
-                    using (IDataReader rdr = command.ExecuteReader())
-                    {
-                        return rdr.ToViewModel<ItemsVM>()[0];
-                    }
+
+
+                    return command.ExecuteReader().ToSingleViewModel<ItemsVM>();
+
 
                 }
             }

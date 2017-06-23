@@ -39,6 +39,24 @@ namespace RodesAPI.Infra
             }
             return null;
         }
+        public static T ToSingleViewModel<T>(this IDataReader rdr)
+        {
+
+            if (rdr.Read())
+            {
+                T obj = (T)Activator.CreateInstance(typeof(T));
+                foreach (PropertyInfo info in obj.GetType().GetProperties())
+                {
+                    if (rdr[info.Name].GetType().Name.Equals("String"))
+                        info.SetValue(obj, rdr[info.Name].ToString().Trim());
+                    else
+                        info.SetValue(obj, rdr[info.Name]);
+                }
+                return obj;
+            }
+            else
+                return default(T);
+        }
         public static List<T> ToViewModel<T>(this IDataReader rdr)
         {
 

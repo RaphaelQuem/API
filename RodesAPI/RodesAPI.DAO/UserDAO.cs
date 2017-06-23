@@ -48,7 +48,11 @@ namespace RodesAPI.DAO
                             string usu = rdr["USUARIOS"].ToString().Trim();
                             string name = rdr["NCOMPS"].ToString().Trim();
 
-                            return new UserVM() { UserName = usu, FirstName = name.Substring(0,name.IndexOf(" "))};
+                            int firstspace = name.IndexOf(" ");
+                            if (firstspace > 0)
+                                name = name.Substring(0, firstspace);
+
+                            return new UserVM() { UserName = usu, FirstName = name};
                         }
                     }
 

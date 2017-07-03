@@ -19,37 +19,37 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/30/2016 16:07:42</publishTime>
     </File>
     <File Include="bin/Microsoft.AI.DependencyCollector.dll">
-      <publishTime>12/07/2016 11:45:42</publishTime>
+      <publishTime>07/12/2016 11:45:42</publishTime>
     </File>
     <File Include="bin/Microsoft.AI.PerfCounterCollector.dll">
-      <publishTime>12/07/2016 11:50:34</publishTime>
+      <publishTime>07/12/2016 11:50:34</publishTime>
     </File>
     <File Include="bin/Microsoft.AI.ServerTelemetryChannel.dll">
-      <publishTime>12/06/2016 15:15:48</publishTime>
+      <publishTime>06/12/2016 15:15:48</publishTime>
     </File>
     <File Include="bin/Microsoft.AI.Web.dll">
-      <publishTime>12/07/2016 11:49:10</publishTime>
+      <publishTime>07/12/2016 11:49:10</publishTime>
     </File>
     <File Include="bin/Microsoft.AI.WindowsServer.dll">
-      <publishTime>12/07/2016 11:50:34</publishTime>
+      <publishTime>07/12/2016 11:50:34</publishTime>
     </File>
     <File Include="bin/Microsoft.ApplicationInsights.dll">
-      <publishTime>12/06/2016 15:09:52</publishTime>
+      <publishTime>06/12/2016 15:09:52</publishTime>
     </File>
     <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
       <publishTime>06/15/2015 01:06:24</publishTime>
     </File>
     <File Include="bin/Newtonsoft.Json.dll">
-      <publishTime>08/03/2014 19:33:56</publishTime>
+      <publishTime>03/08/2014 19:33:56</publishTime>
     </File>
     <File Include="bin/RodesAPI.DAO.dll">
-      <publishTime>06/23/2017 11:16:59</publishTime>
+      <publishTime>06/23/2017 14:24:35</publishTime>
     </File>
     <File Include="bin/RodesAPI.dll">
-      <publishTime>06/23/2017 11:17:04</publishTime>
+      <publishTime>06/23/2017 14:24:41</publishTime>
     </File>
     <File Include="bin/RodesAPI.Infra.dll">
-      <publishTime>06/12/2017 18:59:58</publishTime>
+      <publishTime>06/23/2017 14:24:34</publishTime>
     </File>
     <File Include="bin/RodesAPI.ViewModel.dll">
       <publishTime>06/23/2017 11:16:58</publishTime>

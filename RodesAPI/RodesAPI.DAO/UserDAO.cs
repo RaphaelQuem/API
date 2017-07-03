@@ -1,4 +1,5 @@
 ﻿using RodesAPI.ViewModel;
+using RodesAPI.Infra;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -32,7 +33,7 @@ namespace RodesAPI.DAO
                     pPass.DbType = DbType.String;
 
 
-                    command.CommandText += " SELECT		USUARIOS, NCOMPS";
+                    command.CommandText += " SELECT		USUARIOS UserName, NCOMPS FirstName";
                     command.CommandText += " FROM       SIGCDUSU";
                     command.CommandText += " WHERE      USUARIOS     = @P_USER";
                     command.CommandText += " AND        SENHAS       = @P_PASS";
@@ -41,22 +42,15 @@ namespace RodesAPI.DAO
                     command.Parameters.Add(pUser);
                     command.Parameters.Add(pPass);
 
-                    using (IDataReader rdr = command.ExecuteReader())
+                    UserVM vm = command.ExecuteReader().ToSingleViewModel<UserVM>();
+                    if (vm != null)
                     {
-                        if (rdr.Read())
-                        {
-                            string usu = rdr["USUARIOS"].ToString().Trim();
-                            string name = rdr["NCOMPS"].ToString().Trim();
-
-                            int firstspace = name.IndexOf(" ");
-                            if (firstspace > 0)
-                                name = name.Substring(0, firstspace);
-
-                            return new UserVM() { UserName = usu, FirstName = name};
-                        }
+                        int firstspace = vm.FirstName.IndexOf(" ");
+                        if (firstspace > 0)
+                            vm.FirstName = vm.FirstName.Substring(0, firstspace);
                     }
 
-                    return null;
+                    return vm;
                 }
             }
             catch

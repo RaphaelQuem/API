@@ -47,10 +47,15 @@ namespace RodesAPI.Infra
                 T obj = (T)Activator.CreateInstance(typeof(T));
                 foreach (PropertyInfo info in obj.GetType().GetProperties())
                 {
-                    if (rdr[info.Name].GetType().Name.Equals("String"))
-                        info.SetValue(obj, rdr[info.Name].ToString().Trim());
-                    else
-                        info.SetValue(obj, rdr[info.Name]);
+                    try
+                    {
+                        if (rdr[info.Name].GetType().Name.Equals("String"))
+                            info.SetValue(obj, rdr[info.Name].ToString().Trim());
+                        else
+                            info.SetValue(obj, rdr[info.Name]);
+                    }
+                    catch
+                    { }
                 }
                 return obj;
             }
@@ -67,10 +72,15 @@ namespace RodesAPI.Infra
                 T obj = (T)Activator.CreateInstance(typeof(T));
                 foreach (PropertyInfo info in obj.GetType().GetProperties())
                 {
-                    if(rdr[info.Name].GetType().Name.Equals("String"))
-                        info.SetValue(obj, rdr[info.Name].ToString().Trim());
-                    else
-                        info.SetValue(obj, rdr[info.Name]);
+                    try
+                    {
+                        if (rdr[info.Name].GetType().Name.Equals("String"))
+                            info.SetValue(obj, rdr[info.Name].ToString().Trim());
+                        else
+                            info.SetValue(obj, rdr[info.Name]);
+                    }
+                    catch
+                    { }
                 }
                 objlist.Add(obj);
             }

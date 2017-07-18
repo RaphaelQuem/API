@@ -12,6 +12,7 @@ namespace RodesAPI.Controllers
 {
     public class AuthController : ApiController
     {
+        //cross site request
         [EnableCors(origins: "*", headers: "*", methods: "*")]
         [Route("rodesapi/auth")]
         public UserVM Get()

@@ -67,7 +67,7 @@ namespace RodesAPI.Services
 
             if (TokenService.TokenExpiration.ContainsKey(token))
                 TokenService.TokenExpiration.Remove(token);
-            TokenService.TokenExpiration.Add(token, DateTime.Now.AddMinutes(2));
+            TokenService.TokenExpiration.Add(token, DateTime.Now.AddHours(4));
 
             return ValidTokens.ContainsValue(token);
         }

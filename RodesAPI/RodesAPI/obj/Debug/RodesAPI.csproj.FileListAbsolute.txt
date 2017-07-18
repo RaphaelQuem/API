@@ -45,3 +45,6 @@ C:\Repos\RodesAPI\RodesAPI\RodesAPI\bin\System.Web.Http.WebHost.xml
 C:\Repos\RodesAPI\RodesAPI\RodesAPI\obj\Debug\RodesAPI.csprojResolveAssemblyReference.cache
 C:\Repos\RodesAPI\RodesAPI\RodesAPI\obj\Debug\RodesAPI.dll
 C:\Repos\RodesAPI\RodesAPI\RodesAPI\obj\Debug\RodesAPI.pdb
+C:\Repos\RodesAPI\RodesAPI\RodesAPI\bin\System.Web.Cors.dll
+C:\Repos\RodesAPI\RodesAPI\RodesAPI\bin\System.Web.Http.Cors.dll
+C:\Repos\RodesAPI\RodesAPI\RodesAPI\bin\System.Web.Http.Cors.xml

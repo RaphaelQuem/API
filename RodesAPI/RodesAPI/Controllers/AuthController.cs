@@ -6,11 +6,13 @@ using System.Data.SqlClient;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.Http.Cors;
 
 namespace RodesAPI.Controllers
 {
     public class AuthController : ApiController
     {
+        [EnableCors(origins: "*", headers: "*", methods: "*")]
         [Route("rodesapi/auth")]
         public UserVM Get()
         {

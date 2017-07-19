@@ -45,3 +45,6 @@ C:\Repos\RodesAPI\RodesAPI\RodesAPI\bin\RodesAPI.DAO.dll
 C:\Repos\RodesAPI\RodesAPI\RodesAPI\bin\RodesAPI.Infra.dll
 C:\Repos\RodesAPI\RodesAPI\RodesAPI\bin\RodesAPI.DAO.pdb
 C:\Repos\RodesAPI\RodesAPI\RodesAPI\bin\RodesAPI.Infra.pdb
+C:\Repos\RodesAPI\RodesAPI\RodesAPI\bin\System.Web.Cors.dll
+C:\Repos\RodesAPI\RodesAPI\RodesAPI\bin\System.Web.Http.Cors.dll
+C:\Repos\RodesAPI\RodesAPI\RodesAPI\bin\System.Web.Http.Cors.xml
